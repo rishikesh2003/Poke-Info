@@ -6,3 +6,16 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.primary-btn {
+  font-size: 18px;
+  padding: 10px 22px;
+  background: red;
+  color: white;
+  border: 2px solid red;
+}
