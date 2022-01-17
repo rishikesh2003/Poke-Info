@@ -1,7 +1,7 @@
 # Poké Info
 
 A Pokemon information app built with React. Uses the [PokéAPI](https://pokeapi.co/) directly to fetch data on all Pokémons from every region.
-[Live on Vercel](https://pokeinfo.vercel.app)
+[Live on Netlify](https://pokeinfo-rishi.netlify.app)
 
 ---
 
