@@ -27,7 +27,10 @@ function Navbar() {
           src="https://img.icons8.com/ios-glyphs/15/ffffff/like--v1.png"
           alt="heart"
         />{" "}
-        Favourites <span className={styles.badge}>{favourites.length}</span>
+        Favourites{" "}
+        <span className={styles.badge}>
+          {favourites ? favourites.length : "0"}
+        </span>
       </Link>
     </div>
   );
