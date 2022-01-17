@@ -1,16 +1,23 @@
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "../css/Navbar.module.css";
 
 function Navbar() {
+  const history = useHistory();
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>
+      <div
+        onClick={() => {
+          history.push("/");
+        }}
+        className={styles.logo}
+      >
         <img
           src="https://img.icons8.com/fluency/35/000000/pokeball.png"
           alt="logo
         "
         />
-        <h1>PokeInfo</h1>
+        <h1>Poké Info</h1>
       </div>
       <Link className={"primary-btn"} to={"/favourites"}>
         <img

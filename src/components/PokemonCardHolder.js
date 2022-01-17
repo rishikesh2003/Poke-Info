@@ -34,7 +34,6 @@ function PokemonCardHolder() {
       setCurrentPage(1);
     }
   }
-  console.log(search);
   const Pagination = () => {
     return (
       <div className={"footer"}>
@@ -65,7 +64,11 @@ function PokemonCardHolder() {
     fetchData();
   }, []);
   if (loading) {
-    return <h1>Loading</h1>;
+    return (
+      <div className="loader-container">
+        <div className="loader"></div>
+      </div>
+    );
   }
 
   return (

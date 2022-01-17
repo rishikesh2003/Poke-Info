@@ -13,6 +13,25 @@
   text-transform: capitalize;
 }
 
-.card img {
+.pokemon-img {
   width: 100%;
+}
+
+.card p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  background: blue;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
 }
