@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styles from "../css/Navbar.module.css";
+import { Favourites } from "./context/api/favourites";
 
 function Navbar() {
   const history = useHistory();
+  const { favourites } = useContext(Favourites);
   return (
     <div className={styles.navbar}>
       <div
@@ -24,7 +27,7 @@ function Navbar() {
           src="https://img.icons8.com/ios-glyphs/15/ffffff/like--v1.png"
           alt="heart"
         />{" "}
-        Favourites
+        Favourites <span className={styles.badge}>{favourites.length}</span>
       </Link>
     </div>
   );

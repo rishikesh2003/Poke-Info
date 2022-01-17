@@ -8,7 +8,6 @@ import { prominent } from "color.js";
 function PokemonDetail({ match }) {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(false);
-  const [vibrantColor, setVibrantColor] = useState("#FFFFFF");
   const pokemonNumber = Number(match.params.number);
   useEffect(() => {
     setLoading(true);
@@ -27,12 +26,11 @@ function PokemonDetail({ match }) {
         }
       );
 
-      let bgColor = tinycolor(promColor[1]).isLight()
+      let bgColor = (await tinycolor(promColor[1]).isLight())
         ? promColor[2]
         : promColor[1];
 
       document.body.style.backgroundColor = bgColor;
-      console.log(bgColor);
     }
     fetchData();
     setLoading(false);
