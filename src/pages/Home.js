@@ -1,13 +1,18 @@
 import PokemonCardHolder from "../components/PokemonCardHolder";
 import SearchBar from "../components/SearchBar";
-
+import { Helmet } from "react-helmet";
 function Home() {
   document.body.style.background = "white";
   return (
-    <div>
-      <SearchBar />
-      <PokemonCardHolder />
-    </div>
+    <>
+      <Helmet>
+        <title>Poké Info | Home</title>
+      </Helmet>
+      <div>
+        <SearchBar />
+        <PokemonCardHolder />
+      </div>
+    </>
   );
 }
 

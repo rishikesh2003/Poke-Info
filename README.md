@@ -7,11 +7,11 @@ A Pokemon information app built with React. Uses the [PokéAPI](https://pokeapi.
 
 ## Photos
 
-![ScreenShot1](src\images\screenshot1.jpeg)
+![ScreenShot1](./src/images/screenshot1.jpeg)
 
-![Screenshot2](src\images\screenshot2.jpeg)
+![Screenshot2](./src/images/screenshot2.jpeg)
 
-![Screenshot3](src\images\screenshot3.jpeg)
+![Screenshot3](./src/images/screenshot3.jpeg)
 
 ---
 
