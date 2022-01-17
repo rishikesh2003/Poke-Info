@@ -11,6 +11,8 @@ function PokemonDetail({ match }) {
   const [loading, setLoading] = useState(false);
   const pokemonNumber = Number(match.params.number);
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     setLoading(true);
 
     async function fetchData() {

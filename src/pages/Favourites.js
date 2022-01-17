@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Favourites } from "../components/context/api/favourites";
 import PokemonCard from "../components/PokemonCard";
 
 function FavouritesPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   document.body.style.background = "white";
   const { favourites } = useContext(Favourites);
   <Helmet>
